@@ -1,4 +1,4 @@
-FROM docker.io/tiredofit/alpine:3.16
+FROM docker.io/denisolek/alpine
 LABEL maintainer="Dave Conroy (github.com/tiredofit)"
 
 ### Set Environment Variables
@@ -8,8 +8,8 @@ ENV INFLUX2_VERSION=2.4.0 \
     CONTAINER_ENABLE_MESSAGING=FALSE \
     CONTAINER_ENABLE_MONITORING=TRUE \
     CONTAINER_PROCESS_RUNAWAY_PROTECTOR=FALSE \
-    IMAGE_NAME="tiredofit/db-backup" \
-    IMAGE_REPO_URL="https://github.com/tiredofit/docker-db-backup/"
+    IMAGE_NAME="denisolek/db-backup" \
+    IMAGE_REPO_URL="https://github.com/denisolek/docker-db-backup/"
 
 ### Dependencies
 RUN set -ex && \
